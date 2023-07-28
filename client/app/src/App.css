@@ -108,7 +108,7 @@ section{
   -webkit-text-stroke: .7px var(--main-color);
   background-image: linear-gradient(var(--main-color), var(--main-color));
   background-repeat: no-repeat;
-  -webkit-background-clip: text;
+  background-clip: text;
   background-position: -33rem 0;
   animation: homeBgText 6s linear infinite;
   animation-delay: 2s;
@@ -741,7 +741,7 @@ section:nth-child(odd) .animate.scroll{
 }
 @media(max-width:460px){
   .home-content h1{
-    font-size: 5.2em;
+    font-size: 5.2rem;
   }
   .education{
     padding: 10rem 4% 5rem 5%;
