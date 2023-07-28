@@ -1,6 +1,6 @@
 import './App.css';
-import { useScrollPosition } from '../../../../PortfolioWeb/client/app/src/components/useScrollPosition';
-import { useScreenSize } from '../../../../PortfolioWeb/client/app/src/components/useScreenSize';
+import { useScrollPosition } from './components/useScrollPosition';
+import { useScreenSize } from './components/useScreenSize';
 import {useEffect, useState} from 'react'
 import AboutImage from './images/profile_pic.jpg'
 
@@ -54,7 +54,7 @@ function App() {
   return (
     <div className="App">
       <header className={className(scrollPosition > 100? 'sticky': '', 'header')}>
-        <a href='#Home' className='logo'>Jose.<span className='animate' style={{'--i': 1}}></span></a>
+        <a href='#home' className='logo'>Jose.<span className='animate' style={{'--i': 1}}></span></a>
 
         <div className={!menuStatus?'bx bx-menu':'bx bx-x'} id='menu-icon' onClick={handleMenu}><span className='animate' style={{'--i': 2}}></span></div>
 
@@ -261,7 +261,7 @@ function App() {
           <p>Copyright &copy; 2023 by Jose Figueredo | All Rights Reserved.</p>
         </div>
         <div className='footer-iconTop'>
-          <a href='#Home'><i className='bx bx-up-arrow-alt'></i></a>
+          <a href='#home'><i className='bx bx-up-arrow-alt'></i></a>
         </div>
       </footer>
     </div>
