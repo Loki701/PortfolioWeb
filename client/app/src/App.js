@@ -17,9 +17,11 @@ function App() {
   console.log(screenWidth)
   const sections = document.querySelectorAll('section');
   const navLinks = document.querySelectorAll('header nav a'); 
+  
+  
   useEffect(()=>{
     sections.forEach(sec =>{
-      let offset = 0
+      let offset = 0;
       if(screenHeight > 450){
         offset = sec.offsetTop - 670;
       }else{
@@ -44,7 +46,7 @@ function App() {
       //   sec.classList.remove('show-animate');
       // }
     })
-  }, [scrollPosition]);
+  }, [scrollPosition, navLinks, screenHeight, sections]);
 
   const handleMenu = () =>{
     setMenuStatus(!menuStatus);
@@ -52,7 +54,7 @@ function App() {
   return (
     <div className="App">
       <header className={className(scrollPosition > 100? 'sticky': '', 'header')}>
-        <a href='#' className='logo'>Jose.<span className='animate' style={{'--i': 1}}></span></a>
+        <a href='#Home' className='logo'>Jose.<span className='animate' style={{'--i': 1}}></span></a>
 
         <div className={!menuStatus?'bx bx-menu':'bx bx-x'} id='menu-icon' onClick={handleMenu}><span className='animate' style={{'--i': 2}}></span></div>
 
@@ -79,16 +81,16 @@ function App() {
           </p>
 
           <div className='btn-box'>
-            <a href='#' className='btn'>Hire Me</a>
-            <a href='#' className='btn'>Let's Talk</a>
+            <a href='/' className='btn'>Hire Me</a>
+            <a href='/' className='btn'>Let's Talk</a>
             <span className='animate' style={{'--i': 5}}></span>
           </div>
         </div>
 
         <div className='home-social'>
-          <a href='#'><i className='bx bxl-facebook'></i></a>
-          <a href='#'><i className='bx bxl-twitter'></i></a>
-          <a href='#'><i className='bx bxl-linkedin'></i></a>
+          <a href='/'><i className='bx bxl-facebook'></i></a>
+          <a href='/'><i className='bx bxl-twitter'></i></a>
+          <a href='/'><i className='bx bxl-linkedin'></i></a>
           <span className='animate' style={{'--i': 6}}></span>
         </div>
         <div className='home-imgHover'><span className='animate' style={{'--i': 7}}></span></div>
@@ -97,7 +99,7 @@ function App() {
       <section className='about' id='about'>
         <h2 className='heading'>About <span>Me</span><span className='animate scroll' style={{'--i': 1}}></span></h2>
         <div className='about-img'>
-          <img src={AboutImage} alt='profile image'/>
+          <img src={AboutImage} alt='profile'/>
           <span className='circle-spin'></span>
           <span className='animate scroll' style={{'--i': 2}}></span>
         </div>
@@ -107,7 +109,7 @@ function App() {
           <span className='animate scroll' style={{'--i': 4}}></span>
           </p>
           <div className='btn-box btns'>
-            <a className='btn' href='#'>Read More</a>
+            <a className='btn' href='/'>Read More</a>
             <span className='animate scroll' style={{'--i': 5}}></span>
           </div>
 
@@ -259,7 +261,7 @@ function App() {
           <p>Copyright &copy; 2023 by Jose Figueredo | All Rights Reserved.</p>
         </div>
         <div className='footer-iconTop'>
-          <a href='#'><i className='bx bx-up-arrow-alt'></i></a>
+          <a href='#Home'><i className='bx bx-up-arrow-alt'></i></a>
         </div>
       </footer>
     </div>
