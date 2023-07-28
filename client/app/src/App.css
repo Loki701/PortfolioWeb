@@ -739,20 +739,21 @@ section:nth-child(odd) .animate.scroll{
     height: 38px;
   }
 }
-@media(max-width:460px){
+@media(max-width:700px){
   .home-content h1{
     font-size: 5.2em;
   }
   .education{
     padding: 10rem 4% 5rem 5%;
   }
+  .contact{
+    padding: 7rem;
+  }
   .contact form .input-box .input-field{
     width: 100%;
   }
-
   .footer{
     flex-direction: column-reverse;
-
   }
   .footer p{
     margin-top: 2rem;
