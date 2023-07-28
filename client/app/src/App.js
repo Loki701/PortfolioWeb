@@ -93,7 +93,8 @@ function App() {
           <a href='/'><i className='bx bxl-linkedin'></i></a>
           <span className='animate' style={{'--i': 6}}></span>
         </div>
-        <div className='home-imgHover'><span className='animate' style={{'--i': 7}}></span></div>
+        <div className='home-imgHover'></div>
+        <span className='animate' style={{'--i': 7}}></span>
       </section>
 
       <section className='about' id='about'>
