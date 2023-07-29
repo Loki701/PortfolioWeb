@@ -16,6 +16,16 @@
   --main-color: #00abf0;
   --color-black: #000000;
 }
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffffff;
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: inset 0 0 20px 20px #23232329;
+}
 html{
   font-size: 62.5%;
   overflow-x: hidden;
@@ -95,12 +105,10 @@ section{
 .home-content h1 span{
   color: var(--text-color);
 }
-
 .home-content .text-animate{
   position: relative;
   width: 32.8rem;
 }
-
 .home-content .text-animate h3{
   font-size: 3.2rem;
   font-weight: 700;
@@ -249,7 +257,7 @@ section{
 
 
 .about{
-  min-height: 85vh;
+  /* min-height: 85vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -279,8 +287,8 @@ span{
   align-items: center;
 }
 .about-img img{
-  width: 90%;
-  height: 90%;
+  width: 95%;
+  height: 95%;
   border-radius: 50%;
   border: .3rem solid var(--main-color);
 }
@@ -310,6 +318,7 @@ span{
 .about-content p{
   position: relative;
   font-size: 1.6rem;
+  max-width: 100rem;
   margin: 2rem 0 3rem;
 }
 .btn-box.btns{
@@ -330,7 +339,6 @@ span{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: 70vh;
   padding-bottom: 5rem;
 }
 .education .education-row{
@@ -338,6 +346,7 @@ span{
   display: flex;
   flex-wrap: wrap;
   gap: 5rem;
+  max-width: 150rem;
 }
 .education-row .education-column{
   flex: 1 1 40rem;
@@ -409,22 +418,25 @@ span{
 
 
 .skills{
-  min-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 10rem;
   background: var(--second-bg-color);
 }
-.skills h2{
+/* .skills h2{
   left: 50%;
   transform: translateX(-50%);
-}
+} */
 
 .skills .skills-row{
+  width: 100%;
+  display: inline-block;
   display: flex;
   flex-wrap: wrap;
   gap: 5rem;
+  max-width: 150rem;
 }
 .skills .skills-column{
   flex: 1 1 40rem;
@@ -487,9 +499,103 @@ span{
   width: 80%;
 }
 
+
+
+.portfolio{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio h2{
+  /* left: 50%;
+  transform: translateX(-50%); */
+  position: relative;
+  margin-bottom: 10rem;
+}
+.portfolio .portfolio-container{
+  max-width: 200rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 10rem;
+}
+
+.portfolio-container .portfolio-box{
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  overflow: hidden;
+}
+.portfolio-box img{
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+}
+.portfolio-box img:hover{
+  transform: scale(1.1);
+}
+.portfolio-box .portfolio-layer{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,.1),var(--main-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 4rem;
+  transform: translateY(100%);
+  transition: .5s ease;
+}
+.portfolio-box:hover .portfolio-layer{
+  transform: translateY(0);
+}
+.portfolio-layer h4{
+  font-size: 3rem;
+}
+.portfolio-layer p{
+  font-size: 1.6rem;
+  margin: .3rem 0 1rem;
+}
+.portfolio-layer a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background: var(--text-color);
+  border-radius: 50%;
+  font-size: 2rem;
+  color: var(--second-bg-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .contact{
   min-height:90vh;
   padding: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .contact .heading{
   left: 50%;
@@ -497,7 +603,7 @@ span{
 }
 .contact form{
   position: relative;
-  max-width: 70rem;
+  min-width: 80rem;
   margin: 0 auto;
   text-align: center;
 }
@@ -619,8 +725,21 @@ span{
   z-index: 98;
 }
 section:nth-child(odd) .animate.scroll{
-  background-color: var(--second-bg-color);
+  background: var(--second-bg-color);
 }
+.contact h2 .animate.scroll{
+  background: var(--bg-color);
+}
+.contact form .input-box .input-field .animate.scroll{
+  background: var(--bg-color);
+}
+.contact form .textarea-field .animate.scroll{
+  background: var(--bg-color);
+}
+.contact form .btn-box.btns .animate.scroll{
+  background: var(--bg-color);
+}
+
 .logo .animate,
 .navbar .animate,
 #menu-icon .animate,
@@ -636,11 +755,16 @@ section:nth-child(odd) .animate.scroll{
 .about.show-animate .animate.scroll,
 .education.show-animate .animate.scroll,
 .skills.show-animate .animate.scroll,
-.contact.show-animate .animate.scroll{
+.contact.show-animate .animate.scroll,
+.portfolio.show-animate .animate.scroll{
   transition-delay: calc(.3s * var(--i));
   width: 0;
 } 
 
+.about-img .animate{
+  height: 105%;
+  width: 105%;
+}
 .education .education-box .animate{
   width: 105%;
 }
@@ -652,7 +776,7 @@ section:nth-child(odd) .animate.scroll{
       font-size: 55%;
     }
 }
-@media(max-width: 990px){
+@media(max-width: 1000px){
   .header{
     padding: 2rem 4%;
   }
@@ -664,6 +788,20 @@ section:nth-child(odd) .animate.scroll{
   }
   .footer{
     padding: 2rem 4%;
+  }
+  .portfolio .portfolio-container{
+    grid-template-columns: repeat(1, 1fr);
+    width: 50rem;
+    gap: 5rem;
+  }
+  .contact{
+    padding: 7rem;
+  }
+  .contact form{
+    min-width:fit-content;
+  }
+  .contact form .input-box .input-field{
+    width: 100%;
   }
 }
 @media(max-width:768px){
@@ -722,6 +860,9 @@ section:nth-child(odd) .animate.scroll{
     background: var(--bg-color);
     opacity: .6;
   }
+  .portfolio-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media(max-width:520px){
   html{
@@ -746,18 +887,15 @@ section:nth-child(odd) .animate.scroll{
   .education{
     padding: 10rem 4% 5rem 5%;
   }
-  .contact{
-    padding: 7rem;
-  }
-  .contact form .input-box .input-field{
-    width: 100%;
-  }
   .footer{
     flex-direction: column-reverse;
   }
   .footer p{
     margin-top: 2rem;
     text-align: center;
+  }
+  .portfolio-container{
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media(max-width: 371px){
