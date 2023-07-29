@@ -575,27 +575,15 @@ span{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .contact{
   min-height:90vh;
   padding: 15rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* background: url('./images/test.jpg') no-repeat;
+  background-size: contain;
+  background-position: center; */
 }
 .contact .heading{
   left: 50%;
@@ -790,8 +778,8 @@ section:nth-child(odd) .animate.scroll{
     padding: 2rem 4%;
   }
   .portfolio .portfolio-container{
-    grid-template-columns: repeat(1, 1fr);
-    width: 50rem;
+    grid-template-columns: repeat(2, 1fr);
+    
     gap: 5rem;
   }
   .contact{
@@ -860,8 +848,10 @@ section:nth-child(odd) .animate.scroll{
     background: var(--bg-color);
     opacity: .6;
   }
-  .portfolio-container{
-    grid-template-columns: repeat(2, 1fr);
+  .portfolio .portfolio-container{
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 4rem;
+    gap: 5rem;
   }
 }
 @media(max-width:520px){
