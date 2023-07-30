@@ -1,12 +1,17 @@
 //import emailjs from '@emailjs/browser '
-
+import {useState} from 'react'
 export const Contact = () =>{
 
+    const [formStatus, setformStatus] = useState(false);
+
+    const handleSubmit = ()=>{
+      setformStatus(!formStatus);
+    };
     return(
         <section className='contact' id='contact'>
+        {!formStatus?
+        <>
         <h2 className='heading'>Contact<span>Me!</span><span className='animate scroll' style={{'--i': 1}}></span></h2>
-      
-
         <form 
           name="contact"
           method="post">
@@ -41,11 +46,15 @@ export const Contact = () =>{
               <span className='animate scroll' style={{'--i': 3}}></span>
           </div>
           <div className='btn-box btns'>
-            <button type='submit' className='btn'>Submit</button>
+            <button type='submit' className='btn' onClick={handleSubmit}>Submit</button>
             <span className='animate scroll' style={{'--i': 4}}></span>
           </div>
         </form>
-
+        </>
+        :
+        <>
+          <h1 style={{textAlign:'center', fontSize: '4rem'}}>Thanks for Reaching Out!</h1>
+        </>}
       </section>
     );
 }
