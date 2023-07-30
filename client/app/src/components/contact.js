@@ -15,7 +15,10 @@ export const Contact = () =>{
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData).toString(),
       })
-        .then(() => alert("Thank you for your submission"))
+        .then(() => {
+          alert("Thank you for your submission");
+          setformStatus(!formStatus);
+        })
         .catch((error) => alert(error));
     };
     
@@ -26,7 +29,6 @@ export const Contact = () =>{
         <h2 className='heading'>Contact<span>Me!</span><span className='animate scroll' style={{'--i': 1}}></span></h2>
         <form 
           name="contact"
-          method="post"
           onSubmit={handleSubmit}>
             <input type="hidden" name="form-name" value="contact" />
           <div className='input-box'>
