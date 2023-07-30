@@ -4,9 +4,21 @@ export const Contact = () =>{
 
     const [formStatus, setformStatus] = useState(false);
 
-    const handleSubmit = ()=>{
-      setformStatus(!formStatus);
+    const handleSubmit = (event) => {
+      event.preventDefault();
+    
+      const myForm = event.target;
+      const formData = new FormData(myForm);
+      
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      })
+        .then(() => alert("Thank you for your submission"))
+        .catch((error) => alert(error));
     };
+    
     return(
         <section className='contact' id='contact'>
         {!formStatus?
@@ -14,7 +26,8 @@ export const Contact = () =>{
         <h2 className='heading'>Contact<span>Me!</span><span className='animate scroll' style={{'--i': 1}}></span></h2>
         <form 
           name="contact"
-          method="post">
+          method="post"
+          onSubmit={handleSubmit}>
             <input type="hidden" name="form-name" value="contact" />
           <div className='input-box'>
             <div className='input-field'>
@@ -46,7 +59,7 @@ export const Contact = () =>{
               <span className='animate scroll' style={{'--i': 3}}></span>
           </div>
           <div className='btn-box btns'>
-            <button type='submit' className='btn' onClick={handleSubmit}>Submit</button>
+            <button type='submit' className='btn'>Submit</button>
             <span className='animate scroll' style={{'--i': 4}}></span>
           </div>
         </form>
