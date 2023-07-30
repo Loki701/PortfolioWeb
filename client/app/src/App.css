@@ -506,6 +506,9 @@ span{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /*background: url('./images/test2.jpg') no-repeat;
+  background-size: cover;
+  background-position: center; */
 }
 .portfolio h2{
   /* left: 50%;

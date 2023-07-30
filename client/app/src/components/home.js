@@ -18,7 +18,7 @@ export const Home = ()=>{
 
           <div className='btn-box'>
             <a href='/' className='btn'>Hire Me</a>
-            <a href='/' className='btn'>Let's Talk</a>
+            <a href='#contact' className='btn'>Let's Talk</a>
             <span className='animate' style={{'--i': 5}}></span>
           </div>
         </div>
