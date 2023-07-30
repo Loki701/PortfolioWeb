@@ -5,29 +5,12 @@ export const Contact = () =>{
     return(
         <section className='contact' id='contact'>
         <h2 className='heading'>Contact<span>Me!</span><span className='animate scroll' style={{'--i': 1}}></span></h2>
-        
-        
-        <form name="contact" method="post">
-        <input type="hidden" name="form-name" value="contact" />
-          <p>
-            <label>Your Name: <input type="text" name="name"/></label>
-          </p>
-          <p>
-            <label>Your Email: <input type="email" name="email"/></label>
-          </p>
-          <p>
-            <label>Message: <textarea name="message"></textarea></label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
-
+      
 
         <form 
           name="contact"
-          action='/contact' 
           method="post">
+            <input type="hidden" name="form-name" value="contact" />
           <div className='input-box'>
             <div className='input-field'>
               <input type='text' name='user_name' placeholder='Full Name' required/>
