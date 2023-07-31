@@ -15,7 +15,7 @@ function className(...classes) {
 
 function App() {
   const scrollPosition = useScrollPosition();
-  const { screenWidth, screenHeight } = useScreenSize();
+  const {screenHeight} = useScreenSize();
   const [menuStatus, setMenuStatus] = useState(false);
 
   const sections = document.querySelectorAll("section");
