@@ -18,9 +18,9 @@ function App() {
   const { screenWidth, screenHeight } = useScreenSize();
   const [menuStatus, setMenuStatus] = useState(false);
 
-  console.log(screenWidth);
   const sections = document.querySelectorAll("section");
   const navLinks = document.querySelectorAll("header nav a");
+  
 
   // useEffect(()=>{
   //   sections.forEach(sec =>{
