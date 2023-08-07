@@ -8,35 +8,35 @@ import portfolio6 from "../images/portfolio6.jpg";
 export const Portfolio = () => {
   const projects = [
     {
-      title: "Web Design",
+      title: "Messenging App",
       src: portfolio1,
       subtitle:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, aspernatur?",
       link: "/",
     },
     {
-      title: "Web Design",
+      title: "Custom Language Compiler",
       src: portfolio1,
       subtitle:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, aspernatur?",
       link: "/",
     },
     {
-      title: "Web Design",
+      title: "Social Media Interface",
       src: portfolio3,
       subtitle:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, aspernatur?",
       link: "/",
     },
     {
-      title: "Web Design",
+      title: "StockMarket App",
       src: portfolio4,
       subtitle:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, aspernatur?",
       link: "/",
     },
     {
-      title: "Web Design",
+      title: "Car Price Predictor",
       src: portfolio5,
       subtitle:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, aspernatur?",
@@ -45,7 +45,7 @@ export const Portfolio = () => {
     {
       title: "Web Design",
       src: portfolio6,
-      subtitle:
+      subtitle: 
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, aspernatur?",
       link: "/",
     },

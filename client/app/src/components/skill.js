@@ -21,11 +21,23 @@ export const Skill = () =>{
                   <div className='bar'><span></span></div>
                 </div>
                 <div className='progress'>
-                  <h3>JavaScript <span>90%</span></h3>
+                  <h3>JavaScript <span>80%</span></h3>
                   <div className='bar'><span></span></div>
                 </div>
                 <div className='progress'>
-                  <h3>C++ <span>90%</span></h3>
+                  <h3>C++ <span>95%</span></h3>
+                  <div className='bar'><span></span></div>
+                </div>
+                <div className='progress'>
+                  <h3>Java <span>80%</span></h3>
+                  <div className='bar'><span></span></div>
+                </div>
+                <div className='progress'>
+                  <h3>Python <span>70%</span></h3>
+                  <div className='bar'><span></span></div>
+                </div>
+                <div className='progress'>
+                  <h3>SQL <span>70%</span></h3>
                   <div className='bar'><span></span></div>
                 </div>
               </div>
@@ -41,15 +53,23 @@ export const Skill = () =>{
                   <div className='bar'><span></span></div>
                 </div>
                 <div className='progress'>
-                  <h3>Oracle <span>90%</span></h3>
+                  <h3>Oracle <span>60%</span></h3>
                   <div className='bar'><span></span></div>
                 </div>
                 <div className='progress'>
-                  <h3>Web Design <span>90%</span></h3>
+                  <h3>AWS<span>40%</span></h3>
                   <div className='bar'><span></span></div>
                 </div>
                 <div className='progress'>
-                  <h3>Docker <span>90%</span></h3>
+                  <h3>Tailwind<span>60%</span></h3>
+                  <div className='bar'><span></span></div>
+                </div>
+                <div className='progress'>
+                  <h3>Next.js<span>70%</span></h3>
+                  <div className='bar'><span></span></div>
+                </div>
+                <div className='progress'>
+                  <h3>Docker <span>65%</span></h3>
                   <div className='bar'><span></span></div>
                 </div>
               </div>
