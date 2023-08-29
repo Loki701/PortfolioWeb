@@ -1,7 +1,6 @@
 //import emailjs from '@emailjs/browser '
 import { useState } from "react";
 import { SectionWrapper } from "../hoc";
-import Button from "./Button"
 import { styles } from "../styles";
 import {motion} from "framer-motion"
 import { zoomIn } from "../utils/motion";
@@ -9,26 +8,27 @@ import { zoomIn } from "../utils/motion";
 const Contact = () => {
   const [formStatus, setformStatus] = useState(false);
 
-  const toast = document.querySelector('.toast');
-  const progress = document.querySelector(".toast .progress");
+  const toast = document.getElementsByClassName('toast');
+  const progress = document.getElementsByClassName("progress");
 
   let timer1, timer2;
   const handleNotification = () => {
-    toast.classList.add("active");
-    progress.classList.add('active');
+
+    toast[0].classList.add("active");
+    progress[0].classList.add('active');
 
     timer1 = setTimeout(() =>{
-      toast.classList.remove('active');
+      toast[0].classList.remove('active');
     }, 5000);
 
     timer2 = setTimeout(() =>{
-      progress.classList.remove('active');
+      progress[0].classList.remove('active');
     }, 5300);
   };
   const handleClosingNotification = () =>{
-    toast.classList.remove('active');
+    toast[0].classList.remove('active');
     setTimeout(() =>{
-      progress.classList.remove('active');
+      progress[0].classList.remove('active');
     }, 300);
 
     clearTimeout(timer1);
@@ -47,9 +47,7 @@ const Contact = () => {
       body: new URLSearchParams(formData).toString(),
     })
       .then(() => {
-        // alert("Thank you for your submission");
-        window.scrollTo(0,0);
-        setTimeout(()=>{handleNotification();}, 1000);
+        setTimeout(()=>{handleNotification();}, 200);
         setformStatus(!formStatus);
       })
       .catch((error) => alert(error));
@@ -74,8 +72,9 @@ const Contact = () => {
           <h2 className="heading">
             Contact<span>Me!</span>
             <span className="animate scroll" style={{ "--i": 1 }}></span>
+            
           </h2>
-          <form name="contact">
+          <form name="contact" onSubmit={handleSubmit}>
             <input type="hidden" name="form-name" value="contact" />
             <div className="input-box">
               <div className="input-field">
@@ -136,7 +135,10 @@ const Contact = () => {
             <motion.div 
             variants={zoomIn(1.5)}
             className={styles.aboutButtonCover}>
-              <Button title="Submit" id="hero" click={handleSubmit} />
+              <button className="relative flex justify-center items-center w-[15rem] h-full bg-blac border-[.2rem] border-mainColor border-solid rounded-[.8rem] text-[1.8rem] font-semibold tracking-[.1rem]  text-mainColor z-10 overflow-hidden duration-[.5s] before:content-[''] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-mainColor before:-z-10 before:duration-[.5s] hover:before:w-full hover:text-black" 
+              type="submit"
+              >Submit</button>
+              {/* <Button title="Submit" id="hero" click={handleSubmit} /> */}
             </motion.div>
           </form>
         </>

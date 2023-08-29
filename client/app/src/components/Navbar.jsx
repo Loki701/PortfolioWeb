@@ -4,8 +4,7 @@ import { useScrollPosition } from "./useScrollPosition";
 import { useScreenSize } from "../components/useScreenSize";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import {fadeIn, textVariant, slideIn, zoomIn} from "../utils/motion";
-import { SectionWrapper } from "../hoc";
+import {slideIn} from "../utils/motion";
 
 import { staggerContainer } from "../utils/motion";
 
@@ -42,15 +41,9 @@ const Navbar = () =>{
   
   useEffect(() => {
     sections.forEach((sec) => {
-        console.log(sec)
       let windowHeight = window.innerHeight;
       let elementTop = sec.getBoundingClientRect().top;
-      let elementVisible = 1000;
-      if (screenHeight > 450) {
-        elementVisible = 500;
-      } else {
-        elementVisible = 90;
-      }
+      let elementVisible = screenHeight - 100;
       let id = sec.getAttribute("id");
       if (elementTop < windowHeight - elementVisible) {
           setActiveNav(id);

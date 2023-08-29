@@ -3,7 +3,6 @@ import {
   Hero,
   Navbar,
   Education,
-  Skills,
   Projects,
   Contact,
   Footer,
@@ -19,13 +18,15 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Hero />
-        {/* <Skills /> */}
         <About />
-        <div className="contactContainer">
+        <div className="starContainer">
         <Education />
         <Tech />
         <Projects />
+        <div className="starContainer">
           <Contact />
+          <StarsCanvas />
+        </div>
           <StarsCanvas />
         </div>
         <Footer />

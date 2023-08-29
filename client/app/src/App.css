@@ -748,7 +748,7 @@ span{
   font-size: 2rem;
   color: var(--second-bg-color);
 }
-.contactContainer{
+.starContainer{
   display: block;
   position: relative;
   min-height:90vh;
@@ -764,7 +764,7 @@ span{
 }
 
 .contact{
-  min-height:90vh;
+  min-height:100vh;
   padding: 15rem;
   display: flex;
   flex-direction: column;
@@ -1119,7 +1119,7 @@ section:nth-child(odd) .animate.scroll{
 
 /* below is a popup that we are testing */
 .toast {
-  position: absolute;
+  position: fixed;
   top: 100px;
   right: 25px;
   border-radius: 12px;
