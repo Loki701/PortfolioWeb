@@ -1,6 +1,4 @@
 
-
-import AboutImage from '../images/profile_pic.jpg';
 import {aboutMe} from "../constants";
 import { useState } from 'react';
 import { Tilt } from "react-tilt";
@@ -8,7 +6,7 @@ import { motion } from "framer-motion";
 import { services } from "../constants";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
-import { fadeIn, slideIn, textVariant, zoomIn } from "../utils/motion";
+import { fadeIn, slideIn, textVariant} from "../utils/motion";
 import Button from './Button';
 import { styles } from '../styles';
 

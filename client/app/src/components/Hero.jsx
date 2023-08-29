@@ -1,9 +1,8 @@
 import { motion } from "framer-motion";
-import {fadeIn, textVariant, slideIn, zoomIn} from "../utils/motion";
+import {fadeIn, textVariant, slideIn} from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import Button from "./Button";
-import backgroundVideo from '../images/world.mp4';
 import b2 from "../images/m3.mp4";
 
 const Hero = ()=>{
