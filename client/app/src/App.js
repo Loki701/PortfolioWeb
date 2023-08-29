@@ -19,12 +19,12 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Hero />
-        <About />
-        <Education />
         {/* <Skills /> */}
+        <About />
+        <div className="contactContainer">
+        <Education />
         <Tech />
         <Projects />
-        <div className="contactContainer">
           <Contact />
           <StarsCanvas />
         </div>

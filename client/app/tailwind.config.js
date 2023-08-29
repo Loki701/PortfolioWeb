@@ -34,7 +34,7 @@ export default {
         secondBgColor: "#112e42",
         textColor: "#ededed",
         mainColor: "#00abf0",
-        colorBlack: "#000000",
+        colorBlack: "#010001",
         tertiary: "#151030",
         "black-100": "#100d25",
         "black-200": "#090325",
@@ -45,12 +45,17 @@ export default {
       },
       screens: {
         xs: "600px",
-        xm: "900px"
+        xm: "900px",
+        xxs: "400px",
+        ggg:"1630px",
+        gg: " 1022px"
       },
       backgroundImage: {
         "hero-bg": "url('./images/5.jpg')",
-        
       },
+      backgroundVideo:{
+        "hero-bg-video" : "url('./images/world.mp4')",
+      }
     },
   },
   plugins: [],

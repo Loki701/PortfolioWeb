@@ -67,6 +67,7 @@ const Navbar = () =>{
       const handleMenu = () => {
         setMenuStatus(!menuStatus);
       };
+      
     return(
         <motion.div 
         variants={staggerContainer()}

@@ -753,6 +753,7 @@ span{
   position: relative;
   min-height:90vh;
   z-index: 0;
+  background-color: #010001;
 }
 .starCanvas{
   width: 100%;
@@ -845,8 +846,9 @@ span{
   align-items: center;
   flex-wrap: wrap;
   padding: 2rem 9%;
-  background: var(--bg-color);
-  box-shadow: 0px 40px 50px var(--text-color);
+  background: black;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  box-shadow: 0px 40px 50px var(--main-color);
 }
 
 .footer-text{
@@ -860,7 +862,7 @@ span{
   font-size: 2.2rem;
   color: var(--main-color);
   padding: .8rem;
-  background: var(--bg-color);
+  background: black;
   border: .2rem solid var(--main-color);
   border-radius: 50%;
   z-index: 1;
@@ -898,14 +900,10 @@ span{
 section:nth-child(odd) .animate.scroll{
   background: var(--second-bg-color);
 }
-.contact h2 .animate.scroll{
-  background: var(--bg-color);
-}
-.contact form .input-box .input-field .animate.scroll{
-  background: var(--bg-color);
-}
+.contact h2 .animate.scroll,
+.contact form .input-box .input-field .animate.scroll,
 .contact form .textarea-field .animate.scroll{
-  background: var(--bg-color);
+  background: black;
 }
 
 .logo .animate,
@@ -1001,7 +999,7 @@ section:nth-child(odd) .animate.scroll{
     left: -100%;
     width: 100%;
     height: 100%;
-    background: var(--bg-color);
+    background: #010001;
     border-top: .1rem solid rgba(0,0,0,.2);
     z-index: -1;
     transition: .25s ease;
