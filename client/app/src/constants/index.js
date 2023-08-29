@@ -9,8 +9,8 @@ const navLinks = [{
     title: "Education",
   },
   {
-    id: "skills",
-    title: "Skills",
+    id: "tech",
+    title: "Technologies",
   },
   {
     id: "projects",

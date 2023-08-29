@@ -11,6 +11,7 @@ import Projects from "./Projects";
 import Skills from "./Skills";
 import Tech from "./Tech";
 import Loader from "./Loader";
+import Button from "./Button";
 
 
 export {
@@ -25,5 +26,6 @@ export {
     useScreenSize,
     useScrollPosition,
     Tech,
-    Loader
+    Loader,
+    Button
 }

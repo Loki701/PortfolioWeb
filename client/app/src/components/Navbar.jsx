@@ -3,6 +3,11 @@ import {navLinks} from "../constants";
 import { useScrollPosition } from "./useScrollPosition";
 import { useScreenSize } from "../components/useScreenSize";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import {fadeIn, textVariant, slideIn, zoomIn} from "../utils/motion";
+import { SectionWrapper } from "../hoc";
+
+import { staggerContainer } from "../utils/motion";
 
 function className(...classes) {
     return classes.filter(Boolean).join(" ");
@@ -22,7 +27,7 @@ const Navbar = () =>{
     useEffect(() => {
         const handleScroll = () => {
           const scrollTop = window.scrollY;
-          if (scrollTop > 100) {
+          if (scrollTop > 50) {
             setScrolled(true);
           } else {
             setScrolled(false);
@@ -42,7 +47,7 @@ const Navbar = () =>{
       let elementTop = sec.getBoundingClientRect().top;
       let elementVisible = 1000;
       if (screenHeight > 450) {
-        elementVisible = 650;
+        elementVisible = 500;
       } else {
         elementVisible = 90;
       }
@@ -63,7 +68,12 @@ const Navbar = () =>{
         setMenuStatus(!menuStatus);
       };
     return(
-        <div className={className(scrolled? "sticky" : "", "header")}>
+        <motion.div 
+        variants={staggerContainer()}
+        initial='hidden'
+        whileInView='show'
+        viewport={{ once: true, amount: 0.25 }}
+        className={className(scrolled? "sticky" : "", "header")}>
         
         <Link
         to="/"
@@ -72,20 +82,25 @@ const Navbar = () =>{
             window.scrollTo(0,0);
         }}
         >
-        Jose.<span className="animate" style={{ "--i": 1 }}></span>
+        <motion.p
+        variants={slideIn("left", "ease", 0.1, .5)}
+        >
+          Jose.
+        </motion.p>
         </Link>
 
-        <div
+        <motion.div
+          variants={slideIn("left", "ease", 0.1, .5)}
           className={!menuStatus ? "bx bx-menu" : "bx bx-x"}
           id="menu-icon"
           onClick={handleMenu}
         >
-          <span className="animate" style={{ "--i": 2 }}></span>
-        </div>
+        </motion.div>
 
         <ul className={className(menuStatus ? "active" : "","navbar")}>
             {navLinks.map((nav)=>(
-                <li
+                <motion.li
+                variants={slideIn("left", "ease", 0.1, .5)}
                 key={nav.id}
                 onClick={handleMenu}
                 >
@@ -96,13 +111,12 @@ const Navbar = () =>{
                         {nav.title}
                     </a>
 
-                </li>
+                </motion.li>
             ))}
           <span className="active-nav"></span>
-          <span className="animate" style={{ "--i": 2 }}></span>
         </ul>
 
-        </div>
+        </motion.div>
     );
 }
 

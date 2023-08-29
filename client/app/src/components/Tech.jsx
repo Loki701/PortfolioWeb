@@ -3,17 +3,21 @@ import React from "react";
 import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
+import {motion} from "framer-motion"
 
 const Tech = () => {
   return (
-    <div className='tech'>
+    <section id="tech"className='py-[10rem]'>
+      <div className="flex flex-wrap justify-center gap-10 mx-[10rem] h-[auto]">
       {technologies.map((technology) => (
-        <div className='tech-ball' key={technology.name}>
+        <motion.div 
+        className='w-[10rem] h-[10rem]' key={technology.name}>
           <BallCanvas icon={technology.icon} />
-        </div>
+        </motion.div>
       ))}
-    </div>
+      </div>
+    </section>
   );
 };
 
-export default SectionWrapper(Tech, "");
+export default Tech;

@@ -12,6 +12,13 @@ const styles = {
       "text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]",
     sectionSubText:
       "sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider",
+    linkBall:
+    "relative inline-flex justify-center items-center sm:w-10 sm:h-10 bg-transparent border-solid border rounded-full sm:text-xl text-main z-10 overflow-hidden duration-500 hover:text-bgColor before:content-[''] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-main before:-z-10 before:duration-500 hover:before:w-full w-20 h-20 text-[2.5rem]",
+    buttonCover:
+      "relative flex justify-between w-[34.5rem] h-[5rem]",
+    aboutButtonCover:
+      "relative flex justify-center w-full h-[5rem]",
+    
   };
   
   export { styles };

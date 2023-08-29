@@ -3,12 +3,13 @@
 const Education = () =>{
 
     return(
-        <section className='education' id='education'>
-        <h2 className='heading'>My <span>Journey</span><span className='animate scroll' style={{'--i': 1}}></span></h2>
+        <section className='flex justify-center' id='education'>
+        <div className="flex flex-col justify-center items-center max-w-[80rem] mx-[5rem] xm:mx-[20rem] py-[10rem]">
+        <h2 className='heading'>My <span>Journey</span></h2>
 
         <div className='education-row'>
           <div className='education-column'>
-            <h3 className='title'>Education<span className='animate scroll' style={{'--i': 2}}></span></h3>
+            <h3 className='title'>Education</h3>
 
             <div className='education-box'>
             <div className='education-content'>
@@ -25,11 +26,10 @@ const Education = () =>{
                 <p>Graduated from Miami Dade College with an Associate degree, which I earned through dual enrollment credits obtained during high school.</p>
               </div>
             </div>
-            <span className='animate scroll' style={{'--i': 3}}></span>
             </div>
           </div>
           <div className='education-column'>
-            <h3 className='title'>Experience<span className='animate scroll' style={{'--i': 2}}></span></h3>
+            <h3 className='title'>Experience</h3>
 
             <div className='education-box'>
             <div className='education-content'>
@@ -46,9 +46,9 @@ const Education = () =>{
                 <p>As a freelance software developer on Upwork, I have successfully completed a wide range of projects for clients from various industries. My responsibilities included developing custom solutions, troubleshooting technical issues, and delivering high-quality code on time and within budget.</p>
               </div>
             </div>
-            <span className='animate scroll' style={{'--i': 3}}></span>
             </div>
           </div>
+        </div>
         </div>
       </section>
     );

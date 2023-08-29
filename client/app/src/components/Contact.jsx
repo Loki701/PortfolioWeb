@@ -1,6 +1,10 @@
 //import emailjs from '@emailjs/browser '
 import { useState } from "react";
 import { SectionWrapper } from "../hoc";
+import Button from "./Button"
+import { styles } from "../styles";
+import {motion} from "framer-motion"
+import { zoomIn } from "../utils/motion";
 
 const Contact = () => {
   const [formStatus, setformStatus] = useState(false);
@@ -71,7 +75,7 @@ const Contact = () => {
             Contact<span>Me!</span>
             <span className="animate scroll" style={{ "--i": 1 }}></span>
           </h2>
-          <form name="contact" onSubmit={handleSubmit}>
+          <form name="contact">
             <input type="hidden" name="form-name" value="contact" />
             <div className="input-box">
               <div className="input-field">
@@ -129,12 +133,11 @@ const Contact = () => {
               <span className="focus"></span>
               <span className="animate scroll" style={{ "--i": 3 }}></span>
             </div>
-            <div className="btn-box btns">
-              <button type="submit" className="btn">
-                Submit
-              </button>
-              <span className="animate scroll" style={{ "--i": 4 }}></span>
-            </div>
+            <motion.div 
+            variants={zoomIn(1.5)}
+            className={styles.aboutButtonCover}>
+              <Button title="Submit" id="hero" click={handleSubmit} />
+            </motion.div>
           </form>
         </>
       ) : (

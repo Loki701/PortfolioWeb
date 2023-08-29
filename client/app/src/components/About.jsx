@@ -3,6 +3,43 @@
 import AboutImage from '../images/profile_pic.jpg';
 import {aboutMe} from "../constants";
 import { useState } from 'react';
+import { Tilt } from "react-tilt";
+import { motion } from "framer-motion";
+import { services } from "../constants";
+import { EarthCanvas } from "./canvas";
+import { SectionWrapper } from "../hoc";
+import { fadeIn, slideIn, textVariant, zoomIn } from "../utils/motion";
+import Button from './Button';
+import { styles } from '../styles';
+
+const ServiceCard = ({ index, title, icon }) => (
+  <Tilt className='w-[300px]'>
+    <motion.div
+      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+      className='w-full green-blue-gradient p-[1px] rounded-[20px] shadow-card'
+    >
+      <div
+        options={{
+          max: 45,
+          scale: 1,
+          speed: 450,
+        }}
+        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+      >
+        <img
+          src={icon}
+          alt='web-development'
+          className='w-16 h-16 object-contain'
+        />
+
+        <h3 className='text-white text-[20px] font-bold text-center'>
+          {title}
+        </h3>
+      </div>
+    </motion.div>
+  </Tilt>
+);
+
 
 const About = () =>{
   const[fullP, setFullP] = useState(true);
@@ -12,40 +49,47 @@ const About = () =>{
   }
   const firstN = aboutMe.slice(0,3);
     return(
-        <section className='about' id='about'>
-        <h2 className='heading'>About <span>Me</span><span className='animate scroll' style={{'--i': 1}}></span></h2>
-        <div className='about-img'>
-          <img src={AboutImage} alt='profile'/>
-          <span className='circle-spin'></span>
-          <span className='animate scroll' style={{'--i': 2}}></span>
-        </div>
-        <div className='about-content'>
-          <h3>Frontend Developer<span className='animate scroll' style={{'--i': 3}}></span></h3>
+        <section className=' flex justify-center items-center flex-col gap-[2rem] bg-secondBgColor py-[10rem]' id='about'>
+        <motion.h2 
+        variants={slideIn("down", "tween", .2, 1)}
+        className='heading'
+        >About <span>Me</span></motion.h2>
+        <EarthCanvas />
+        <motion.div 
+        variants={textVariant(0.3)}
+        className='flex flex-col justify-center items-center gap-5'>
+        <div className='px-[5rem]'>
           {fullP?
           <>
           {firstN.map((p, idx)=>(
             <p 
             key={idx}
+            className="relative text-[1.6rem] max-w-[80rem] "
             >
+              &emsp;&emsp;&emsp;
               {p}
-              <span className='animate scroll' style={{'--i': 4}}></span>
             </p>
           ))}
-          <div className='btn-box btns'>
-            <a className='btn' href='#about' onClick={handleReadMore}>Read More</a>
-            <span className='animate scroll' style={{'--i': 5}}></span>
+          <div className={`${styles.aboutButtonCover} mt-10`}>
+            <Button title="Read More" id="about" toggle={true} click={handleReadMore} />
           </div>
           </>:
           <>
           {aboutMe.map((p, idx)=>(
-            <p key={idx}>{p}<span className='animate scroll' style={{'--i': 4}}></span></p>
+            <p key={idx} className="relative text-[1.6rem] max-w-[80rem] ">&emsp;&emsp;&emsp;{p}</p>
           ))}
           </>
           }
-
-
         </div>
+
+
+        </motion.div>
+        <div className='my-20 flex flex-wrap gap-10 justify-center'>
+        {services.map((service, index) => (
+          <ServiceCard key={service.title} index={index} {...service} />
+        ))}
+      </div>
       </section>
     );
 }
-export default About;
+export default SectionWrapper(About);

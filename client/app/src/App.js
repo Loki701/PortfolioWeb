@@ -23,8 +23,8 @@ function App() {
         <Education />
         {/* <Skills /> */}
         <Tech />
+        <Projects />
         <div className="contactContainer">
-          <Projects />
           <Contact />
           <StarsCanvas />
         </div>
