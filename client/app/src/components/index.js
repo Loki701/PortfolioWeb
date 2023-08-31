@@ -8,7 +8,6 @@ import Contact from "./Contact";
 import Education from "./Education";
 import Footer from "./Footer";
 import Projects from "./Projects";
-import Skills from "./Skills";
 import Tech from "./Tech";
 import Loader from "./Loader";
 import Button from "./Button";
@@ -22,7 +21,6 @@ export {
     Education,
     Footer,
     Projects,
-    Skills,
     useScreenSize,
     useScrollPosition,
     Tech,

@@ -24,21 +24,21 @@ const navLinks = [{
 const aboutMe = [
 "Welcome to my corner of the digital world! I'm thrilled to have you explore my journey as a passionate software developer.", 
 
-"In a realm where logic and creativity converge, I find my true calling. I'm [Your Name], a dedicated developer with a keen interest in crafting elegant and efficient solutions to real-world problems. My insatiable curiosity drives me to continuously learn and innovate, making every project I undertake an exciting adventure.",
+"In a realm where logic and creativity converge, I find my true calling. I'm Jose Figueredo, a dedicated developer with a keen interest in crafting elegant and efficient solutions to real-world problems. My insatiable curiosity drives me to continuously learn and innovate, making every project I undertake an exciting adventure.",
 
-"My love affair with code began [mention how you got into programming - childhood fascination, a college course, a particular project], and it has blossomed into a full-fledged partnership. With a solid foundation in [list your primary programming languages and technologies], I thrive in turning complex concepts into clean, maintainable code.",
+"My journey into the world of coding ignited when I aspired to create my own video game. This initial spark led me to enroll in programming classes, where my passion deepened with each dive into various programming topics. Over time, this passion has evolved into a profound and committed partnership. Armed with a strong grasp of languages such as C++, Java, Python, SQL, and JavaScript, I excel in transforming intricate ideas into elegant and sustainable code.",
 
 "But I'm not just about strings of code. I believe that software development is an art as much as it is a science. User experience takes center stage in my creations, and I strive to build applications that not only function flawlessly but also provide a seamless and enjoyable interaction.",
 
-"Over the years, I've had the privilege of collaborating with diverse teams on projects ranging from [mention a few notable projects you've worked on, highlighting their significance and your role]. These experiences have not only honed my technical skills but also enriched my ability to communicate and thrive in collaborative environments.",
+"Over the years, I've had the privilege of collaborating with diverse teams on projects ranging from Web Applications and compilers to ML Models. These experiences have not only honed my technical skills but also enriched my ability to communicate and thrive in collaborative environments.",
 
-"Beyond the confines of my IDE, you'll find me [mention a few hobbies or interests that showcase your personality outside of coding - this could be anything from hiking, painting, playing musical instruments to volunteering].",
+"Beyond the confines of my IDE, you'll find me hiking, traveling, playing sports to volunteering.",
 
-"I'm excited to share my journey, projects, and insights with you. Whether you're here to browse through my portfolio, read my blog posts, or explore the world of software development together, I'm honored to have you join me. Let's innovate, let's collaborate, and let's make the digital world a more functional and beautiful place, one line of code at a time."];
+"I'm excited to share my journey, projects, and insights with you. Whether you're here to browse through my portfolio or explore the world of software development together, I'm honored to have you join me. Let's innovate, let's collaborate, and let's make the digital world a more functional and beautiful place, one line of code at a time."];
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Full Stack Developer",
     icon: web,
   },
   {
@@ -46,7 +46,7 @@ const services = [
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Aspiring DevOps developers",
     icon: backend,
   }
 ];
@@ -103,88 +103,6 @@ const technologies = [
   {
     name: "docker",
     icon: docker,
-  },
-];
-
-const experiences = [
-  {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: "starbucks",
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: "tesla",
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: "shopify",
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: "meta",
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-];
-
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
 
@@ -254,4 +172,4 @@ const projects = [
   },
 ];
 
-export {navLinks, services, technologies, experiences, testimonials, projects, aboutMe};
+export {navLinks, services, technologies, projects, aboutMe};
