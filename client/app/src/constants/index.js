@@ -1,4 +1,4 @@
-import {carrent, jobit, tripguide, web, mobile, backend, html, css, javascript, typescript, reactjs, redux, tailwind, nodejs, mongodb, threejs, git, figma, docker} from "../assets"
+import {MA,compiler,gator,crawler, ml, web, mobile, backend, html, css, javascript, typescript, reactjs, tailwind, nodejs, git, docker, cplusplus, python, sql, java} from "../assets"
 
 const navLinks = [{
     id: "about",
@@ -31,8 +31,6 @@ const aboutMe = [
 "But I'm not just about strings of code. I believe that software development is an art as much as it is a science. User experience takes center stage in my creations, and I strive to build applications that not only function flawlessly but also provide a seamless and enjoyable interaction.",
 
 "Over the years, I've had the privilege of collaborating with diverse teams on projects ranging from Web Applications and compilers to ML Models. These experiences have not only honed my technical skills but also enriched my ability to communicate and thrive in collaborative environments.",
-
-"Beyond the confines of my IDE, you'll find me hiking, traveling, playing sports to volunteering.",
 
 "I'm excited to share my journey, projects, and insights with you. Whether you're here to browse through my portfolio or explore the world of software development together, I'm honored to have you join me. Let's innovate, let's collaborate, and let's make the digital world a more functional and beautiful place, one line of code at a time."];
 
@@ -69,12 +67,28 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: "React JS",
-    icon: reactjs,
+    name: "Cplusplus",
+    icon: cplusplus,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Python1",
+    icon: python,
+  },
+  {
+    name: "sql",
+    icon: sql,
+  },
+  {
+    name: "java",
+    icon: java,
+  },
+  // {
+  //   name: "postgres",
+  //   icon: postgres,
+  // },
+  {
+    name: "React JS",
+    icon: reactjs,
   },
   {
     name: "Tailwind CSS",
@@ -84,22 +98,22 @@ const technologies = [
     name: "Node JS",
     icon: nodejs,
   },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
+  // {
+  //   name: "MongoDB",
+  //   icon: mongodb,
+  // },
+  // {
+  //   name: "Three JS",
+  //   icon: threejs,
+  // },
   {
     name: "git",
     icon: git,
   },
-  {
-    name: "figma",
-    icon: figma,
-  },
+  // {
+  //   name: "figma",
+  //   icon: figma,
+  // },
   {
     name: "docker",
     icon: docker,
@@ -108,66 +122,121 @@ const technologies = [
 
 const projects = [
   {
-    name: "Java Compiler",
+    name: "Messaging Web App",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A secure and decentralized messaging application using XMPP messaging protocol.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Tailwind",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "PostgreSQL",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "ExpressJS",
         color: "pink-text-gradient",
-      },
+      }
     ],
-    image: carrent,
+    image: MA,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Communications App",
+    name: "Used Car Price Prediction Model",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A machine-learning model for accurately predicting used car prices based on various car features, including year, mileage, make, model, and region",
     tags: [
       {
-        name: "react",
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Scikit-learn",
         color: "green-text-gradient",
       },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
     ],
-    image: jobit,
+    image: ml,
     source_code_link: "https://github.com/",
   },
   {
-    name: "ML Project",
+    name: "Custom Language Compiler",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A custom programming language using context-free grammar, that allows for ease image manipulation",
     tags: [
       {
-        name: "nextjs",
+        name: "Java",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: compiler,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Web Crawler",
+    description:
+      "A web crawler that traverses the web given a root URL storing website content in local storage.",
+    tags: [
+      {
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
+        name: "BeautifulSoup",
+        color: "orange-text-gradient",
       },
       {
-        name: "css",
-        color: "pink-text-gradient",
+        name: "SQLite",
+        color: "green-text-gradient",
       },
     ],
-    image: tripguide,
+    image: crawler,
+    source_code_link: "https://github.com/",
+  },
+  // {
+  //   name: "Budgeting Web App",
+  //   description:
+  //     "An intuitive budgeting web app that helps track your expenses and stay on top of your finances.",
+  //   tags: [
+  //     {
+  //       name: "React",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "MySQL",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "ExpressJS",
+  //       color: "green-text-gradient",
+  //     },
+  //   ],
+  //   image: tripguide,
+  //   source_code_link: "https://github.com/",
+  // },
+  {
+    name: "Smart Event Organizer ",
+    description:
+      "a web application designed for efficient event management and mood prediction based on workload analysis.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ExpressJS",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "green-text-gradient",
+      },
+    ],
+    image: gator,
     source_code_link: "https://github.com/",
   },
 ];

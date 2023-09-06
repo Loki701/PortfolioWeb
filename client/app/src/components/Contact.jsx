@@ -69,7 +69,7 @@ const Contact = () => {
       </div>
       {!formStatus ? (
         <>
-          <h2 className="heading">
+          <h2 className={styles.heading + " self-center" }>
             Contact<span>Me!</span>
             <span className="animate scroll" style={{ "--i": 1 }}></span>
             
@@ -132,14 +132,13 @@ const Contact = () => {
               <span className="focus"></span>
               <span className="animate scroll" style={{ "--i": 3 }}></span>
             </div>
-            <motion.div 
-            variants={zoomIn(1.5)}
+            <div 
             className={styles.aboutButtonCover}>
               <button className="relative flex justify-center items-center w-[15rem] h-full bg-blac border-[.2rem] border-mainColor border-solid rounded-[.8rem] text-[1.8rem] font-semibold tracking-[.1rem]  text-mainColor z-10 overflow-hidden duration-[.5s] before:content-[''] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-mainColor before:-z-10 before:duration-[.5s] hover:before:w-full hover:text-black" 
               type="submit"
               >Submit</button>
-              {/* <Button title="Submit" id="hero" click={handleSubmit} /> */}
-            </motion.div>
+              <span className="animate scroll" style={{ "--i": 4, "background": "black" }}></span>
+            </div>
           </form>
         </>
       ) : (

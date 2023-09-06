@@ -4,11 +4,12 @@ import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import Button from "./Button";
 import b2 from "../images/m3.mp4";
+import b1 from "../images/1.mp4";
 
 const Hero = ()=>{
 
     return(
-        <section className="min-h-[100vh] flex items-center py-[9%] bg-colorBlack bg-cover bg-center bg-no-repeat" id='hero'>
+        <section className="flex flex-col min-h-[100vh] justify-center py-[9%] bg-colorBlack" id='hero'>
         <div className={`max-w-[60rem] ${styles.padding} mx-10 z-[99]`}>
           <motion.h1 
           variants={fadeIn("","",0.1,1)}
@@ -34,7 +35,7 @@ const Hero = ()=>{
           </motion.div>
         </div>
 
-        <div className={`absolute ml-20 bottom-16 sm:w-40 flex justify-between w-[17rem] z-[99]`}>
+        <div className={`absolute  ml-20 bottom-16 sm:w-40 flex justify-between w-[17rem] z-[99]`}>
           <motion.a 
           variants={slideIn("left", "tween", 0.2, .5)}
           className={styles.linkBall} 
@@ -48,10 +49,14 @@ const Hero = ()=>{
           className={styles.linkBall} 
           href='/'><i className='bx bxl-linkedin'></i></motion.a>
         </div>
-
-        <video className="absolute top-0 left-0 w-full h-full min-w-[80rem] min-h-[100rem]" autoPlay loop muted id='video'>
+        
+        <video className="absolute top-0 left-0 w-full h-full min-h-[90rem] max-lg:hidden" autoPlay loop muted id='video'>
           <source src={b2} type="video/mp4"/>
         </video>
+        <video className="absolute right-0  min-w-[100rem] lg:hidden" autoPlay loop muted id='video'>
+          <source src={b1} type="video/mp4"/>
+        </video>
+
       </section>
     );
 }

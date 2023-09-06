@@ -18,6 +18,8 @@ const styles = {
       "relative flex justify-between w-[34.5rem] h-[5rem]",
     aboutButtonCover:
       "relative flex justify-center w-full h-[5rem]",
+    heading:
+      "relative inline-block text-[5rem] mb-[3rem]",
     
   };
   

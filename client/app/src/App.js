@@ -19,11 +19,11 @@ function App() {
         <Navbar />
         <Hero />
         <About />
-        <div className="starContainer">
+        <div className=" block relative min-h-[90vh] z-0 bg-black">
         <Education />
         <Tech />
         <Projects />
-        <div className="starContainer">
+        <div className="block relative min-h-[90vh] z-0 bg-black">
           <Contact />
           <StarsCanvas />
         </div>

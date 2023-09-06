@@ -50,7 +50,7 @@ const About = () =>{
         <section className=' flex justify-center items-center flex-col gap-[2rem] bg-colorBlack pt-[10rem] pb-[20rem]' id='about'>
         <motion.h2 
         variants={slideIn("down", "tween", .2, 1)}
-        className='heading'
+        className={styles.heading}
         >About <span>Me</span></motion.h2>
         <EarthCanvas />
         <motion.div 
