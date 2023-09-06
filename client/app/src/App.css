@@ -240,6 +240,7 @@ input:-webkit-autofill:active{
 html{
   font-size: 62.5%;
   overflow-x: hidden;
+  background-color: #000000;
 }
 body{
   color: var(--text-color);

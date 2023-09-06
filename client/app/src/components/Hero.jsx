@@ -5,8 +5,19 @@ import { styles } from "../styles";
 import Button from "./Button";
 import b2 from "../images/m3.mp4";
 import b1 from "../images/1.mp4";
+import { useEffect, useState } from "react";
 
 const Hero = ()=>{
+  const [screenHeight, setScreenHeight] = useState(window.innerHeight);
+
+  useEffect(()=>{
+    const resizeBehavior = ()=>{
+      setScreenHeight(window.innerHeight);
+    }
+    window.addEventListener("resize", resizeBehavior)
+
+    return ()=>{window.removeEventListener("resize", resizeBehavior)}
+  },[])
 
     return(
         <section className="flex flex-col min-h-[100vh] justify-center py-[9%] bg-colorBlack" id='hero'>
@@ -34,8 +45,8 @@ const Hero = ()=>{
             <Button title="Let's Talk" id="contact"/>
           </motion.div>
         </div>
-
-        <div className={`absolute  ml-20 bottom-16 sm:w-40 flex justify-between w-[17rem] z-[99]`}>
+        
+        <div className={`${screenHeight > 620?"absolute": ""} mt-20 ml-20 bottom-16 sm:w-40 flex justify-between w-[17rem] z-[99]`}>
           <motion.a 
           variants={slideIn("left", "tween", 0.2, .5)}
           className={styles.linkBall} 
