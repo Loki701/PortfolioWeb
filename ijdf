@@ -1,0 +1,167 @@
+[33mcommit 7b92662e622a0b0e32a9549b5637b77908dd13d5[m[33m ([m[1;36mHEAD -> [m[1;32mFeatures[m[33m)[m
+Author: Loki701 <figueredoj189@gmail.com>
+Date:   Thu Aug 31 14:46:46 2023 -0400
+
+    removed context funtionality and upgraded constant
+
+[33mcommit cd29f115d4beea8c5be30b63ab888e82144ee85b[m[33m ([m[1;31morigin/reactErrors[m[33m)[m
+Author: Loki701 <figueredoj189@gmail.com>
+Date:   Tue Aug 29 01:21:39 2023 -0400
+
+    fixed some warnings
+
+[33mcommit 1537a9779c8d2c152cf70102bd698048528f0ef1[m
+Author: Loki701 <figueredoj189@gmail.com>
+Date:   Tue Aug 29 01:15:12 2023 -0400
+
+    Update package-lock.json
+
+[33mcommit 4647caab7fbb03fc92f2a6cf4bcae238c95413ad[m
+Author: Loki701 <figueredoj189@gmail.com>
+Date:   Tue Aug 29 01:09:53 2023 -0400
+
+    fixed contact form
+
+[33mcommit 50b862cc635dae7ae3c1eacab493a9d1f82c5b07[m
+Author: Loki701 <figueredoj189@gmail.com>
+Date:   Tue Aug 29 00:00:33 2023 -0400
+
+    changed background color and fix some bugs
+
+[33mcommit 480150bd85a7f7316b657e0a8a477ddf09acd852[m
+Author: Loki701 <figueredoj189@gmail.com>
+Date:   Mon Aug 28 21:04:06 2023 -0400
+
+    made website responsive and added multiple new features
+
+[33mcommit 8ebc3de9cb1447fc889f39d1ce652c05ab700cb4[m
+Author: Loki701 <figueredoj189@gmail.com>
+Date:   Sun Aug 27 16:48:30 2023 -0400
+
+    erros
+
+[33mcommit 33fd8e9bcd5640d0119b7f8faf5b8f8f712582d1[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Loki701 <figueredoj189@gmail.com>
+Date:   Mon Aug 7 19:01:43 2023 -0400
+
+    customization updates
+
+[33mcommit 5b7a37d05f1687a5b7f3c91b0ef8ee9d3c933eeb[m
+Author: Loki701 <figueredoj189@gmail.com>
+Date:   Sun Jul 30 21:03:06 2023 -0400
+
+    Update App.js
+
+[33mcommit ebda9987a838a1bacbd02a176c70fae889766404[m
+Author: Loki701 <figueredoj189@gmail.com>
+Date:   Sun Jul 30 20:59:03 2023 -0400
+
+    update form
+
+[33mcommit f7d1d2559a90798c2c7f8b5a9981e1704a66d7d7[m
+Author: Loki701 <figueredoj189@gmail.com>
+Date:   Sun Jul 30 17:07:26 2023 -0400
+
+    Update contact.js
+
+[33mcommit 2c9f3ba0c09b659c5a458516281782cf0be70d67[m
+Author: Loki701 <figueredoj189@gmail.com>
+Date:   Sun Jul 30 16:33:25 2023 -0400
+
+    Update contact.js
+
+[33mcommit a3c4ae0d9f07378b7ce2b881a59f2cf05970ddf8[m
+Author: Loki701 <figueredoj189@gmail.com>
+Date:   Sun Jul 30 16:14:17 2023 -0400
+
+    Update contact.js
+
+[33mcommit 3745a3a7bbecc2bad9508889fcf1e6f422d252e9[m
+Author: Loki701 <figueredoj189@gmail.com>
+Date:   Sun Jul 30 15:52:04 2023 -0400
+
+    update contact form
+
+[33mcommit b14673cdb88ed003bb0116329b1600d5261665df[m
+Author: Loki701 <figueredoj189@gmail.com>
+Date:   Sun Jul 30 15:46:45 2023 -0400
+
+    update
+
+[33mcommit 170da0e91a002490a24b6ee11fdfb25116380cc1[m
+Author: Loki701 <figueredoj189@gmail.com>
+Date:   Sun Jul 30 14:35:23 2023 -0400
+
+    Update contact.js
+
+[33mcommit 812d39be467bb819ed18231fe7944efdaa43f434[m
+Author: Loki701 <figueredoj189@gmail.com>
+Date:   Sat Jul 29 22:31:09 2023 -0400
+
+    update
+
+[33mcommit 06dce8e7185aeb6dc7f72f49cd370cf6bec22be7[m
+Author: Loki701 <figueredoj189@gmail.com>
+Date:   Fri Jul 28 23:25:45 2023 -0400
+
+    Update App.css
+
+[33mcommit 0fe1947fb41f1b099875b9762ee989c988d19dcd[m
+Author: Loki701 <figueredoj189@gmail.com>
+Date:   Fri Jul 28 23:11:55 2023 -0400
+
+    update
+
+[33mcommit ab62d47e3b38b6fc287293f0dbaeb0e4e6605f6f[m
+Author: Loki701 <figueredoj189@gmail.com>
+Date:   Thu Jul 27 22:28:22 2023 -0400
+
+    updated logo
+
+[33mcommit 0917d7c0252136f42dabdb0cd4b9f6a91bf214e2[m
+Author: Loki701 <figueredoj189@gmail.com>
+Date:   Thu Jul 27 21:27:32 2023 -0400
+
+    Update App.css
+
+[33mcommit d1847e72ec1cfea7f2add9ecb558024083171caa[m
+Author: Loki701 <figueredoj189@gmail.com>
+Date:   Thu Jul 27 21:26:28 2023 -0400
+
+    Update App.css
+
+[33mcommit a7b3d417ff81e81478507d6b4e900f6345d65e18[m
+Author: Loki701 <figueredoj189@gmail.com>
+Date:   Thu Jul 27 20:58:43 2023 -0400
+
+    Update App.js
+
+[33mcommit dcbb154cc80df61b6598969259eca4bb5377fadc[m
+Author: Loki701 <figueredoj189@gmail.com>
+Date:   Thu Jul 27 20:41:50 2023 -0400
+
+    Update App.js
+
+[33mcommit 5f59a4921641773153cd4de714211a34f23a51e7[m
+Author: Loki701 <figueredoj189@gmail.com>
+Date:   Thu Jul 27 20:35:45 2023 -0400
+
+    removed warnings
+
+[33mcommit 3802514efa17a523fbf6960cf9ceccb0ecd334bc[m
+Author: Loki701 <figueredoj189@gmail.com>
+Date:   Thu Jul 27 20:24:35 2023 -0400
+
+    update
+
+[33mcommit c944b02e6d9a6910f94bf34e557b532e995fe1ce[m
+Author: Loki701 <figueredoj189@gmail.com>
+Date:   Thu Jul 27 20:01:59 2023 -0400
+
+    finished portfolio app
+
+[33mcommit 7896c40c0ba5c2c3ffa0bd4a887820508f5907da[m
+Author: Loki701 <figueredoj189@gmail.com>
+Date:   Thu Jul 27 19:46:47 2023 -0400
+
+    Initial commit
