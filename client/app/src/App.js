@@ -19,7 +19,7 @@ function App() {
         <Navbar />
         <Hero />
         <About />
-        <div className=" block relative min-h-[90vh] z-0 bg-black">
+        {/* <div className=" block relative min-h-[90vh] z-0 bg-black"> */}
         <Education />
         <Tech />
         <Projects />
@@ -27,8 +27,8 @@ function App() {
           <Contact />
           <StarsCanvas />
         </div>
-          <StarsCanvas />
-        </div>
+          {/* <StarsCanvas /> */}
+        {/* </div> */}
         <Footer />
       </BrowserRouter>
   );
