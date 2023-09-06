@@ -2,8 +2,6 @@
 import { useState } from "react";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
-import {motion} from "framer-motion"
-import { zoomIn } from "../utils/motion";
 
 const Contact = () => {
   const [formStatus, setformStatus] = useState(false);
