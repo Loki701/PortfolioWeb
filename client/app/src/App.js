@@ -9,8 +9,6 @@ import {
   Tech
 } from "./components";
 import { StarsCanvas } from "./components/canvas";
-// import { StateProvider } from "./context/StateContext";
-// import reducer, { initialState } from "./context/StateReducers";
 import { BrowserRouter } from "react-router-dom";
 
 function App() {
@@ -19,7 +17,6 @@ function App() {
         <Navbar />
         <Hero />
         <About />
-        {/* <div className=" block relative min-h-[90vh] z-0 bg-black"> */}
         <Education />
         <Tech />
         <Projects />
@@ -27,8 +24,6 @@ function App() {
           <Contact />
           <StarsCanvas />
         </div>
-          {/* <StarsCanvas /> */}
-        {/* </div> */}
         <Footer />
       </BrowserRouter>
   );
