@@ -1,4 +1,4 @@
-import {MA,compiler,gator,crawler, ml, web, mobile, backend, html, css, javascript, typescript, reactjs, tailwind, nodejs, git, docker, cplusplus, python, sql, java} from "../assets"
+import {hml, hmr, MA,compiler,gator,crawler, ml, web, mobile, backend, html, css, javascript, typescript, reactjs, tailwind, nodejs, git, docker, cplusplus, python, sql, java} from "../assets"
 
 const navLinks = [{
     id: "about",
@@ -122,6 +122,39 @@ const technologies = [
 
 const projects = [
   {
+    
+    name: "GerhardT",
+    description:
+      "A responsive professional landing page for a fictional restaurant built using React",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      }
+    ],
+    image: hmr,
+    source_code_link: "https://github.com/",
+  },
+  {
+    
+    name: "GreenScape",
+    description:
+      "A multi-page responsive website for a fictional landscaping company built using React and Tailwind CSS",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "orange-text-gradient",
+      }
+    ],
+    image: hml,
+    source_code_link: "https://github.com/",
+  },
+  {
+    
     name: "Messaging Web App",
     description:
       "A secure and decentralized messaging application using XMPP messaging protocol.",

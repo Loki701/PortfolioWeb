@@ -28,8 +28,12 @@ import python from "./tech/python.png";
 import sql from "./tech/sql.png";
 import java from "./tech/java.png";
 import postgres from "./tech/postgres.png";
+import hml from "./hml.png";
+import hmr from "./hmr.png";
 
 export {
+  hml,
+  hmr,
     carrent,
     ml,
     MA,
