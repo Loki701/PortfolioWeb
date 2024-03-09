@@ -1,6 +1,32 @@
-import {hml, hmr, MA,compiler,gator,crawler, ml, web, mobile, backend, html, css, javascript, typescript, reactjs, tailwind, nodejs, git, docker, cplusplus, python, sql, java} from "../assets"
+import {
+  hml,
+  hmr,
+  MA,
+  compiler,
+  gator,
+  crawler,
+  ml,
+  web,
+  mobile,
+  backend,
+  html,
+  css,
+  javascript,
+  typescript,
+  reactjs,
+  tailwind,
+  nodejs,
+  git,
+  docker,
+  cplusplus,
+  python,
+  sql,
+  java,
+  trailblazer,
+} from "../assets";
 
-const navLinks = [{
+const navLinks = [
+  {
     id: "about",
     title: "About",
   },
@@ -22,17 +48,18 @@ const navLinks = [{
   },
 ];
 const aboutMe = [
-"Welcome to my corner of the digital world! I'm thrilled to have you explore my journey as a passionate software developer.", 
+  "Welcome to my corner of the digital world! I'm thrilled to have you explore my journey as a passionate software developer.",
 
-"In a realm where logic and creativity converge, I find my true calling. I'm Jose Figueredo, a dedicated developer with a keen interest in crafting elegant and efficient solutions to real-world problems. My insatiable curiosity drives me to continuously learn and innovate, making every project I undertake an exciting adventure.",
+  "In a realm where logic and creativity converge, I find my true calling. I'm Jose Figueredo, a dedicated developer with a keen interest in crafting elegant and efficient solutions to real-world problems. My insatiable curiosity drives me to continuously learn and innovate, making every project I undertake an exciting adventure.",
 
-"My journey into the world of coding ignited when I aspired to create my own video game. This initial spark led me to enroll in programming classes, where my passion deepened with each dive into various programming topics. Over time, this passion has evolved into a profound and committed partnership. Armed with a strong grasp of languages such as C++, Java, Python, SQL, and JavaScript, I excel in transforming intricate ideas into elegant and sustainable code.",
+  "My journey into the world of coding ignited when I aspired to create my own video game. This initial spark led me to enroll in programming classes, where my passion deepened with each dive into various programming topics. Over time, this passion has evolved into a profound and committed partnership. Armed with a strong grasp of languages such as C++, Java, Python, SQL, and JavaScript, I excel in transforming intricate ideas into elegant and sustainable code.",
 
-"But I'm not just about strings of code. I believe that software development is an art as much as it is a science. User experience takes center stage in my creations, and I strive to build applications that not only function flawlessly but also provide a seamless and enjoyable interaction.",
+  "But I'm not just about strings of code. I believe that software development is an art as much as it is a science. User experience takes center stage in my creations, and I strive to build applications that not only function flawlessly but also provide a seamless and enjoyable interaction.",
 
-"Over the years, I've had the privilege of collaborating with diverse teams on projects ranging from Web Applications and compilers to ML Models. These experiences have not only honed my technical skills but also enriched my ability to communicate and thrive in collaborative environments.",
+  "Over the years, I've had the privilege of collaborating with diverse teams on projects ranging from Web Applications and compilers to ML Models. These experiences have not only honed my technical skills but also enriched my ability to communicate and thrive in collaborative environments.",
 
-"I'm excited to share my journey, projects, and insights with you. Whether you're here to browse through my portfolio or explore the world of software development together, I'm honored to have you join me. Let's innovate, let's collaborate, and let's make the digital world a more functional and beautiful place, one line of code at a time."];
+  "I'm excited to share my journey, projects, and insights with you. Whether you're here to browse through my portfolio or explore the world of software development together, I'm honored to have you join me. Let's innovate, let's collaborate, and let's make the digital world a more functional and beautiful place, one line of code at a time.",
+];
 
 const services = [
   {
@@ -46,7 +73,7 @@ const services = [
   {
     title: "Aspiring DevOps developers",
     icon: backend,
-  }
+  },
 ];
 
 const technologies = [
@@ -122,7 +149,31 @@ const technologies = [
 
 const projects = [
   {
-    
+    name: "Trailblazers",
+    description:
+      "This tool allows you to visualize the pathfinding and maze generation algorithms in action. To get started, select an algorithm, pace, and maze type from the dropdown menu and click the run button. You can also create walls by clicking and dragging on the grid. Enjoy!",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Spring Boot",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Bootstrap",
+        color: "green-text-gradient",
+      },
+      {
+        name: "REST API",
+        color: "red-text-gradient",
+      },
+    ],
+    image: trailblazer,
+    source_code_link: "https://github.com/",
+  },
+  {
     name: "GerhardT",
     description:
       "A responsive professional landing page for a fictional restaurant built using React",
@@ -130,13 +181,20 @@ const projects = [
       {
         name: "React",
         color: "blue-text-gradient",
-      }
+      },
+      {
+        name: "UI Design",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Responsive Design",
+        color: "orange-text-gradient",
+      },
     ],
     image: hmr,
     source_code_link: "https://github.com/",
   },
   {
-    
     name: "GreenScape",
     description:
       "A multi-page responsive website for a fictional landscaping company built using React and Tailwind CSS",
@@ -148,13 +206,12 @@ const projects = [
       {
         name: "Tailwind",
         color: "orange-text-gradient",
-      }
+      },
     ],
     image: hml,
     source_code_link: "https://github.com/",
   },
   {
-    
     name: "Messaging Web App",
     description:
       "A secure and decentralized messaging application using XMPP messaging protocol.",
@@ -174,7 +231,7 @@ const projects = [
       {
         name: "ExpressJS",
         color: "pink-text-gradient",
-      }
+      },
     ],
     image: MA,
     source_code_link: "https://github.com/",
@@ -274,4 +331,4 @@ const projects = [
   },
 ];
 
-export {navLinks, services, technologies, projects, aboutMe};
+export { navLinks, services, technologies, projects, aboutMe };

@@ -17,6 +17,10 @@
     #000000
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+.border-glow {
+  /* border: solid 1px hsl(186 100% 69%); */
+  border: solid 1px var(--main-color);
+}
 
 .violet-gradient {
   background: #804dee;

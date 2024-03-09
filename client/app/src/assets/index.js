@@ -30,8 +30,10 @@ import java from "./tech/java.png";
 import postgres from "./tech/postgres.png";
 import hml from "./hml.png";
 import hmr from "./hmr.png";
+import trailblazer from "./trailblazers.png";
 
 export {
+  trailblazer,
   hml,
   hmr,
     carrent,
