@@ -47,18 +47,18 @@ const Hero = ()=>{
         </div>
         
         <div className={`${screenHeight > 620?"absolute": ""} mt-20 ml-20 bottom-16 sm:w-40 flex justify-between w-[17rem] z-[99]`}>
-          <motion.a 
+          {/* <motion.a 
           variants={slideIn("left", "tween", 0.2, .5)}
           className={styles.linkBall} 
           href='/'><i className='bx bxl-facebook'></i></motion.a>
           <motion.a
           variants={slideIn("left", "tween", 0.2, .5)}
           className={styles.linkBall}
-          href='/'><i className='bx bxl-twitter'></i></motion.a>
+          href='/'><i className='bx bxl-twitter'></i></motion.a> */}
           <motion.a 
           variants={slideIn("left", "tween", 0.2, .5)}
           className={styles.linkBall} 
-          href='/'><i className='bx bxl-linkedin'></i></motion.a>
+          href='https://www.linkedin.com/in/jose-a-figueredo'><i className='bx bxl-linkedin'></i></motion.a>
         </div>
         
         <video className="absolute top-0 left-0 w-full h-full min-h-[90rem] max-lg:hidden" autoPlay loop muted id='video'>
