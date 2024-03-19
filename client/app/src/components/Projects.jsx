@@ -23,10 +23,10 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="border-glow flex flex-col p-5 rounded-2xl sm:w-[360px] min-h-[600px] min-w-[400px] w-full z-[100]"
+        className="border-glow flex flex-col p-5 rounded-2xl max-w-[400px]  max-h-[700px] w-full h-full z-[100]"
       >
 
-        <div className=" relative min-h-[350px] rounded-2xl">
+        <div className=" relative sm:min-h-auto min-h-[350px] rounded-2xl">
           <img
             className="w-full h-full max-h-[320px] rounded-2xl"
             src={image}

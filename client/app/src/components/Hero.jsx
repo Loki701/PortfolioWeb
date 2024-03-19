@@ -20,7 +20,7 @@ const Hero = ()=>{
   },[])
 
     return(
-        <section className="flex flex-col min-h-[100vh] justify-center py-[9%] bg-colorBlack" id='hero'>
+        <section className="flex flex-col min-h-[100vh] justify-center py-[9%]" id='hero'>
         <div className={`max-w-[60rem] ${styles.padding} mx-10 z-[99]`}>
           <motion.h1 
           variants={fadeIn("","",0.1,1)}
@@ -61,10 +61,10 @@ const Hero = ()=>{
           href='https://www.linkedin.com/in/jose-a-figueredo'><i className='bx bxl-linkedin'></i></motion.a>
         </div>
         
-        <video className="absolute top-0 left-0 w-full h-full min-h-[90rem] max-lg:hidden" autoPlay loop muted id='video'>
+        <video className="absolute top-[-20px] left-0 w-full h-full min-h-[90rem] max-lg:hidden z-[-1]" preload autoPlay loop muted id='video'>
           <source src={b2} type="video/mp4"/>
         </video>
-        <video className="absolute right-0  min-w-[100rem] lg:hidden" autoPlay loop muted id='video'>
+        <video className="absolute right-0  min-w-[100rem] lg:hidden z-[-1]" preload autoPlay loop muted id='video'>
           <source src={b1} type="video/mp4"/>
         </video>
 

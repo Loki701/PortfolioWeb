@@ -44,6 +44,7 @@ export default {
         card: "0px 35px 120px -15px #211e35",
       },
       screens: {
+        xxs: "380px",
         xs: "600px",
         xm: "900px",
         xxs: "400px",
