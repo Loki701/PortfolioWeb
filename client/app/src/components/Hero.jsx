@@ -4,7 +4,8 @@ import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import Button from "./Button";
 import b2 from "../images/m3.mp4";
-import b1 from "../images/1.mp4";
+// import b1 from "../images/1.mp4";
+import fastHero from "../images/fastHero.mp4"
 import { useEffect, useState } from "react";
 
 const Hero = ()=>{
@@ -65,7 +66,7 @@ const Hero = ()=>{
           <source src={b2} type="video/mp4"/>
         </video>
         <video className="absolute right-0  min-w-[100rem] lg:hidden z-[-1]" preload autoPlay loop muted id='video'>
-          <source src={b1} type="video/mp4"/>
+          <source src={fastHero} type="video/mp4"/>
         </video>
 
       </section>
