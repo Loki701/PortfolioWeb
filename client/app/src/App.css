@@ -516,6 +516,7 @@ span{
   background: var(--bg-color);
   z-index: 98;
 }
+
 /* section:nth-child(odd) .animate.scroll{
   background: var(--second-bg-color);
 } */
@@ -585,6 +586,17 @@ span{
   #menu-icon{
     display: block;
   }
+
+  .videoBackground-container{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100rem;
+    z-index: 1;
+    background-image: url(./images/1.mp4);
+  }
+
   .navbar{
     position: absolute;
     display: flex;
@@ -656,6 +668,9 @@ span{
   .home-social a{
     width: 38px;
     height: 38px;
+  }
+  .videoBackground-container{
+    display: block;
   }
 }
 @media(max-width:460px){

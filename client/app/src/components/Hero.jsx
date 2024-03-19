@@ -4,7 +4,7 @@ import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import Button from "./Button";
 import b2 from "../images/m3.mp4";
-// import b1 from "../images/1.mp4";
+import b1 from "../images/1.mp4";
 import fastHero from "../images/fastHero.mp4"
 import { useEffect, useState } from "react";
 
@@ -62,9 +62,13 @@ const Hero = ()=>{
           href='https://www.linkedin.com/in/jose-a-figueredo'><i className='bx bxl-linkedin'></i></motion.a>
         </div>
         
+        <div className="videoBackground-container">
+        </div>
+        
         <video className="absolute top-[-20px] left-0 w-full h-full min-h-[90rem] max-lg:hidden z-[-1]" preload autoPlay loop muted id='video'>
           <source src={b2} type="video/mp4"/>
         </video>
+        
         <video className="absolute right-0  min-w-[100rem] lg:hidden z-[-1]" preload autoPlay loop muted id='video'>
           <source src={fastHero} type="video/mp4"/>
         </video>
