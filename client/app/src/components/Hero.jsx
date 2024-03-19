@@ -5,7 +5,7 @@ import { styles } from "../styles";
 import Button from "./Button";
 import b2 from "../images/m3.mp4";
 import b1 from "../images/1.mp4";
-import fastHero from "../images/fastHero.mp4"
+// import fastHero from "../images/fastHero.mp4"
 import { useEffect, useState } from "react";
 
 const Hero = ()=>{
