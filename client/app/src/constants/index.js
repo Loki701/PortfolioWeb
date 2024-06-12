@@ -3,7 +3,6 @@ import {
   hmr,
   MA,
   compiler,
-  gator,
   crawler,
   ml,
   web,
