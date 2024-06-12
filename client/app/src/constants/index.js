@@ -308,27 +308,7 @@ const projects = [
   //   image: tripguide,
   //   source_code_link: "https://github.com/",
   // },
-  {
-    name: "Smart Event Organizer ",
-    description:
-      "a web application designed for efficient event management and mood prediction based on workload analysis.",
-    tags: [
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "ExpressJS",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "MongoDB",
-        color: "green-text-gradient",
-      },
-    ],
-    image: gator,
-    source_code_link: "https://github.com/",
-  },
+
 ];
 
 export { navLinks, services, technologies, projects, aboutMe };
